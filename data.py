@@ -1,0 +1,70 @@
+graph = {
+    'Arad': ['Zerind', 'Timisoara', 'Sibiu'],
+    'Zerind': ['Arad', 'Oradea'],
+    'Oradea': ['Zerind', 'Sibiu'],
+    'Sibiu': ['Arad', 'Oradea', 'Fagaras', 'Rimnicu Vilcea'],
+    'Timisoara': ['Arad', 'Lugoj'],
+    'Lugoj': ['Timisoara', 'Mehadia'],
+    'Mehadia': ['Lugoj', 'Drobeta'],
+    'Drobeta': ['Mehadia', 'Craiova'],
+    'Craiova': ['Drobeta', 'Rimnicu Vilcea', 'Pitesti'],
+    'Rimnicu Vilcea': ['Sibiu', 'Craiova', 'Pitesti'],
+    'Pitesti': ['Rimnicu Vilcea', 'Craiova', 'Bucharest'],
+    'Fagaras': ['Sibiu', 'Bucharest'],
+    'Bucharest': ['Fagaras', 'Pitesti', 'Giurgiu', 'Urziceni'],
+    'Giurgiu': ['Bucharest'],
+    'Urziceni': ['Bucharest', 'Hirsova', 'Vaslui'],
+    'Hirsova': ['Urziceni', 'Eforie'],
+    'Eforie': ['Hirsova'],
+    'Vaslui': ['Urziceni', 'Iasi'],
+    'Iasi': ['Vaslui', 'Neamt'],
+    'Neamt': ['Iasi']
+}
+
+
+weighted_graph = {
+    'Arad': {'Zerind': 75, 'Timisoara': 118, 'Sibiu': 140},
+    'Zerind': {'Arad': 75, 'Oradea': 71},
+    'Oradea': {'Zerind': 71, 'Sibiu': 151},
+    'Sibiu': {'Arad': 140, 'Oradea': 151, 'Fagaras': 99, 'Rimnicu Vilcea': 80},
+    'Timisoara': {'Arad': 118, 'Lugoj': 111},
+    'Lugoj': {'Timisoara': 111, 'Mehadia': 70},
+    'Mehadia': {'Lugoj': 70, 'Drobeta': 75},
+    'Drobeta': {'Mehadia': 75, 'Craiova': 120},
+    'Craiova': {'Drobeta': 120, 'Rimnicu Vilcea': 146, 'Pitesti': 138},
+    'Rimnicu Vilcea': {'Sibiu': 80, 'Craiova': 146, 'Pitesti': 97},
+    'Pitesti': {'Rimnicu Vilcea': 97, 'Craiova': 138, 'Bucharest': 101},
+    'Fagaras': {'Sibiu': 99, 'Bucharest': 211},
+    'Bucharest': {'Fagaras': 211, 'Pitesti': 101, 'Giurgiu': 90, 'Urziceni': 85},
+    'Giurgiu': {'Bucharest': 90},
+    'Urziceni': {'Bucharest': 85, 'Hirsova': 98, 'Vaslui': 142},
+    'Hirsova': {'Urziceni': 98, 'Eforie': 86},
+    'Eforie': {'Hirsova': 86},
+    'Vaslui': {'Urziceni': 142, 'Iasi': 92},
+    'Iasi': {'Vaslui': 92, 'Neamt': 87},
+    'Neamt': {'Iasi': 87}
+}
+
+
+coordinates = {
+    'Arad': (46.175101, 21.319541),
+    'Zerind': (46.625011, 21.516451),
+    'Oradea': (47.046501, 21.918943),
+    'Sibiu': (45.796928, 24.149990),
+    'Timisoara': (45.748871, 21.208679),
+    'Lugoj': (45.685711, 21.905630),
+    'Mehadia': (44.903938, 22.364941),
+    'Drobeta': (44.626900, 22.652821),
+    'Craiova': (44.318378, 23.796400),
+    'Rimnicu Vilcea': (45.106579, 24.365210),
+    'Pitesti': (44.850043, 24.879606),
+    'Fagaras': (45.844590, 24.971182),
+    'Bucharest': (44.426765, 26.102537),
+    'Giurgiu': (43.895390, 25.967060),
+    'Urziceni': (44.715038, 26.648769),
+    'Hirsova': (46.229752, 28.646980),
+    'Eforie': (44.038212, 28.645691),
+    'Vaslui': (46.638088, 27.728760),
+    'Iasi': (47.158455, 27.601442),
+    'Neamt': (46.931810, 26.369690)
+}
