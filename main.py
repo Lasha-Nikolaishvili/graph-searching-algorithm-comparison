@@ -152,7 +152,7 @@ def run_a_star():
 
 def main():
     print('Choose an algorithm to run:')
-    choice = input("BFS - 1, IDDFS - 2, A* - 3, '-1' to quit: ")
+    choice = input("BFS - 1, IDDFS - 2, A* - 3, any other character to quit: ")
 
     while choice in ['1', '2', '3']:
         if choice == '1':
